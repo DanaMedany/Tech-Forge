@@ -6,10 +6,10 @@ import { Suspense } from "react";
 async function page() {
   "use cache";
   cacheLife("hours");
-  const response = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/events`
-  );
-  const { events } = await response.json();
+  // const response = await fetch(
+  //   `${process.env.NEXT_PUBLIC_BASE_URL}/api/events`
+  // );
+  // const { events } = await response.json();
 
   return (
     <section className="mt-20 space-y-7 px-8">
