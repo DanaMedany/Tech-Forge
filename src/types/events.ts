@@ -1,6 +1,6 @@
 export interface EventCardProps {
   title: string;
-  description: string;
+  description?: string;
   image: string;
   slug: string;
   location: string;
