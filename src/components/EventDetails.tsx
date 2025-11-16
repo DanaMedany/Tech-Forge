@@ -1,6 +1,6 @@
 import { IEvent } from "@/database";
 import { getSimilarEventsBySlug } from "@/lib/actions/event.action";
-import { cacheLife } from "next/cache";
+
 import { notFound } from "next/navigation";
 import EventCard from "./EventCard";
 import BookEvent from "./BookEvent";
@@ -11,7 +11,7 @@ import Image from "next/image";
 
 async function EventDetails({ params }: { params: Promise<string> }) {
   "use cache";
-  cacheLife("hours");
+
   const slug = await params;
 
   let event;
@@ -54,7 +54,6 @@ async function EventDetails({ params }: { params: Promise<string> }) {
     audience,
     tags,
     organizer,
-    _id,
   } = event;
 
   if (!description) return notFound();
