@@ -1,5 +1,6 @@
 import EventCard from "@/components/EventCard";
 import { IEvent } from "@/database";
+import events from "@/lib/constants";
 import { cacheLife } from "next/cache";
 import { Suspense } from "react";
 

@@ -5,7 +5,7 @@ import EventDetailItem from "@/components/EventDetailItem";
 import EventTags from "@/components/EventTags";
 import { IEvent } from "@/database";
 import { getSimilarEventsBySlug } from "@/lib/actions/event.action";
-import { cacheLife } from "next/cache";
+
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
